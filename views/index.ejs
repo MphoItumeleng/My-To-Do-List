@@ -33,7 +33,7 @@
             <form action="/login" method="POST">
                 <input type="email" name="email" placeholder="Email" required class="form-control mb-2">
                 <input type="password" name="password" placeholder="Password" required class="form-control mb-2">
-                <button type="submit" class="btn btn-secondary w-300">Login</button>
+                <button type="submit" class="btn btn-secondary w-100">Login</button>
             </form>
         </div>
     <% } else { %>
@@ -83,7 +83,7 @@
 
         <br><br>
         <form action="/logout" method="POST">
-            <button type="submit" class="btn btn-danger w-100">Logout</button>
+            <button type="submit" class="btn btn-danger w-100" style="width: 100%; padding: 15px 20px;">Logout</button>
         </form>
 
     <% } %>
