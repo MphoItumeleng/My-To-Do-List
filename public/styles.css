@@ -3,7 +3,7 @@ body {
     font-family: 'Poppins', sans-serif;
     display: flex;
     flex-direction: column;
-    justify-content: center;
+    justify-content: space-between;
     align-items: center;
     min-height: 100vh;
     text-align: center;
@@ -19,7 +19,7 @@ body {
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    margin-bottom: 80px;
+    flex-grow: 1;
 }
 h2 {
     font-family: 'Great Vibes', cursive;
@@ -80,15 +80,13 @@ li form {
 }
 .footer {
     width: 100%;
-    position: absolute;
-    bottom: 0;
-    left: 0;
     background: rgba(255, 255, 255, 0.1);
     backdrop-filter: blur(8px);
     text-align: center;
     padding: 10px 0;
     font-size: 14px;
     border-top: 2px solid rgba(255, 255, 255, 0.1);
+    margin-top: auto;
 }
 .footer-link {
     text-decoration: none;
@@ -107,9 +105,9 @@ li form {
     transform: scale(1.2);
     filter: invert(31%) sepia(55%) saturate(698%) hue-rotate(290deg) brightness(85%) contrast(92%);
 }
-/* Ensure the footer remains at the bottom on all screen sizes */
+/* Ensure the footer remains at the bottom on all screen sizes
 @media (max-height: 600px) {
     .footer {
         position: relative;
     }
-}
+} */
