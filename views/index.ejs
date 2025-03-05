@@ -9,12 +9,24 @@
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons/font/bootstrap-icons.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link href="https://fonts.googleapis.com/css2?family=Great+Vibes&family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
 </head>
 <body>
 
 <div class="container">
     <h2>Things to Do</h2>
     
+    <% if (errorMessage) { %>
+        <script>
+            Swal.fire({
+                icon: 'error',
+                title: 'Oops...',
+                text: '<%= errorMessage %>',
+                showConfirmButton: true
+            });
+        </script>
+    <% } %>
+
     <% if (!user) { %>
         <!-- Signup Form -->
         <div class="card p-3 mb-3">

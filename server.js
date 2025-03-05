@@ -62,7 +62,12 @@ app.post("/signup", async (req, res) => {
         req.session.userName = user.name;
         res.redirect("/");
     } catch (err) {
-        res.status(400).send("Email already in use.");
+        res.render("index", {
+            user: null,
+            tasks: [],
+            page: 1,
+            errorMessage: "Email already in use."
+        });
     }
 });
 
@@ -72,7 +77,12 @@ app.post("/login", async (req, res) => {
     
     const user = await User.findOne({ email });
     if (!user || user.password !== password) {
-        return res.status(401).send("Invalid login credentials.");
+        return res.render("index", {
+            user: null,
+            tasks: [],
+            page: 1,
+            errorMessage: "Invalid login credentials."
+        });
     }
     
     req.session.userId = user._id;
