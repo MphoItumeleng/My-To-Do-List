@@ -54,14 +54,16 @@
                     <span class="<%= task.completed ? 'text-decoration-line-through text-muted' : '' %>">
                         <%= task.description %>
                     </span>
-                    <div>
-                        <form action="/complete/<%= task._id %>" method="POST" class="d-inline">
-                            <button type="submit" class="btn btn-sm btn-success">✓</button>
-                        </form>
-                        <form action="/delete/<%= task._id %>" method="POST" class="d-inline">
-                            <button type="submit" class="btn btn-sm btn-danger">✗</button>
-                        </form>
-                    </div>
+                    <form action="/complete/<%= task._id %>" method="POST" class="d-inline">
+                        <button type="submit" class="btn btn-sm btn-success">
+                            <i class="bi bi-check-lg"></i>
+                        </button>
+                    </form>
+                    <form action="/delete/<%= task._id %>" method="POST" class="d-inline">
+                        <button type="submit" class="btn btn-sm btn-danger">
+                            <i class="bi bi-x-lg"></i>
+                        </button>
+                    </form>
                 </li>
             <% }); %>
         </ul>
@@ -75,7 +77,7 @@
                 <a href="/?page=<%= page + 1 %>" class="btn btn-secondary">Next</a>
             <% } %>
         </div>
-        
+
         <br><br>
         <form action="/logout" method="POST">
             <button type="submit" class="btn btn-danger w-100">Logout</button>
