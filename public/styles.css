@@ -3,11 +3,12 @@ body {
     font-family: 'Poppins', sans-serif;
     display: flex;
     flex-direction: column;
-    justify-content: space-between;
+    justify-content: center;
     align-items: center;
     min-height: 100vh;
     text-align: center;
     margin: 0;
+    padding: 20px 0;
 }
 .container {
     max-width: 400px;
@@ -20,6 +21,7 @@ body {
     justify-content: center;
     align-items: center;
     flex-grow: 1;
+    margin: 20px 0;
 }
 h2 {
     font-family: 'Great Vibes', cursive;
@@ -105,9 +107,3 @@ li form {
     transform: scale(1.2);
     filter: invert(31%) sepia(55%) saturate(698%) hue-rotate(290deg) brightness(85%) contrast(92%);
 }
-/* Ensure the footer remains at the bottom on all screen sizes
-@media (max-height: 600px) {
-    .footer {
-        position: relative;
-    }
-} */
