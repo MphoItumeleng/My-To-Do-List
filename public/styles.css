@@ -92,10 +92,11 @@ li form {
     display: flex;
     align-items: center;
     justify-content: center;
-    width: 30px;
-    height: 30px;
-    padding: 0;
+    width: 36px;
+    height: 36px;
+    padding: 5px;
     border-radius: 50%;
+    font-size: 1.2rem;
 }
 .footer {
     width: 100%;
