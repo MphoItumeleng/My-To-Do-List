@@ -38,6 +38,7 @@ mongoose.connect(process.env.MONGO_URI, { useNewUrlParser: true, useUnifiedTopol
 app.get("/", async (req, res) => {
     let user = null;
     let tasks = [];
+    let page = parseInt(req.query.page) || 1; // Get page number from query params
 
     if (req.session.userId) {
         user = await User.findById(req.session.userId);
@@ -46,7 +47,7 @@ app.get("/", async (req, res) => {
         }
     }
 
-    res.render("index", { user, tasks });
+    res.render("index", { user, tasks, page });
 });
 
 // Signup
