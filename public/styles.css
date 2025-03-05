@@ -125,6 +125,3 @@ li form {
     transform: scale(1.2);
     filter: invert(31%) sepia(55%) saturate(698%) hue-rotate(290deg) brightness(85%) contrast(92%);
 }
-form button {
-    width: 100%;
-}
