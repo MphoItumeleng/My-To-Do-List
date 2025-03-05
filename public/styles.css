@@ -56,30 +56,31 @@ ul {
 li {
     display: flex;
     align-items: center;
-    justify-content: space-between; /* Keep text and buttons aligned */
-    max-width: 100%; /* Ensures tasks stay inside their container */
-    word-wrap: break-word; /* Breaks long words */
-    overflow-wrap: break-word; /* Supports text breaking across browsers */
-    white-space: normal; /* Allows wrapping */
+    justify-content: space-between;
+    max-width: 100%;
+    word-wrap: break-word;
+    overflow-wrap: break-word;
+    white-space: normal;
     padding: 10px;
     border-radius: 5px;
 }
 li span {
-    flex-grow: 1; /* Allows text to take available space */
+    flex-grow: 1;
     overflow: hidden;
 }
 li form {
-    margin-left: 5px; /* Prevents buttons from sticking too close to text */
+    margin-left: 5px;
 }
 .footer {
-    width: 100%;
+    width: 100%;position: fixed;
+    bottom: 0;
+    left: 0;
     background: rgba(255, 255, 255, 0.1);
     backdrop-filter: blur(8px);
     text-align: center;
-    padding: 15px 0;
+    padding: 10px 0;
     font-size: 14px;
-    position: relative;
-    margin-top: 20px;
+    border-top: 2px solid rgba(255, 255, 255, 0.1);
 }
 .footer-link {
     text-decoration: none;
