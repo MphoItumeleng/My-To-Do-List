@@ -80,6 +80,23 @@ li span {
 li form {
     margin-left: 5px;
 }
+.task-actions {
+    display: flex;
+    align-items: center;
+    gap: 5px;
+}
+.task-actions form {
+    margin: 0;
+}
+.task-actions button {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 30px;
+    height: 30px;
+    padding: 0;
+    border-radius: 50%;
+}
 .footer {
     width: 100%;
     background: rgba(255, 255, 255, 0.1);

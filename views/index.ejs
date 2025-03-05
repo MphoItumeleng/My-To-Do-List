@@ -54,16 +54,18 @@
                     <span class="<%= task.completed ? 'text-decoration-line-through text-muted' : '' %>">
                         <%= task.description %>
                     </span>
-                    <form action="/complete/<%= task._id %>" method="POST" class="d-inline">
-                        <button type="submit" class="btn btn-sm btn-success">
-                            <i class="bi bi-check-lg"></i>
-                        </button>
-                    </form>
-                    <form action="/delete/<%= task._id %>" method="POST" class="d-inline">
-                        <button type="submit" class="btn btn-sm btn-danger">
-                            <i class="bi bi-x-lg"></i>
-                        </button>
-                    </form>
+                    <div class="task-actions d-flex gap-2">
+                        <form action="/complete/<%= task._id %>" method="POST" class="d-inline">
+                            <button type="submit" class="btn btn-sm btn-success">
+                                <i class="bi bi-check-lg"></i>
+                            </button>
+                        </form>
+                        <form action="/delete/<%= task._id %>" method="POST" class="d-inline">
+                            <button type="submit" class="btn btn-sm btn-danger">
+                                <i class="bi bi-x-lg"></i>
+                            </button>
+                        </form>
+                    </div>
                 </li>
             <% }); %>
         </ul>
