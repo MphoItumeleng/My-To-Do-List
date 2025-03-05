@@ -50,14 +50,14 @@ button {
     color: #ff6699;
 }
 .footer {
-    position: fixed;
-    bottom: 0;
     width: 100%;
     background: rgba(255, 255, 255, 0.1);
     backdrop-filter: blur(8px);
     text-align: center;
-    padding: 10px 0;
+    padding: 15px 0;
     font-size: 14px;
+    position: relative;
+    margin-top: 20px;
 }
 .footer-link {
     text-decoration: none;
@@ -74,5 +74,5 @@ button {
 }
 .footer-link:hover .icon {
     transform: scale(1.2);
-    filter: invert(31%) sepia(55%) saturate(698%) hue-rotate(290deg) brightness(85%) contrast(92%); /* Pink */
+    filter: invert(31%) sepia(55%) saturate(698%) hue-rotate(290deg) brightness(85%) contrast(92%);
 }
