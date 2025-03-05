@@ -62,6 +62,7 @@ app.post("/signup", async (req, res) => {
         req.session.userName = user.name;
         res.redirect("/");
     } catch (err) {
+        console.error("Signup error: ", err);
         res.render("index", {
             user: null,
             tasks: [],
